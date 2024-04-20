@@ -21,4 +21,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run the Python script
-CMD [ "python", "habyt_rental_system/pipeline.py" ]
+CMD [ "python", "habyt_rental_system/etl.py" ]
