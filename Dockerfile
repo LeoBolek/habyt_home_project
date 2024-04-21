@@ -4,10 +4,6 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Download the repository from GitHub
-RUN apt-get update && apt-get install -y git && \
-    git clone https://github.com/LeoBolek/habyt_home_project.git /app/habyt-rental-system
-
 # Set the working directory to the cloned repository
 WORKDIR /app/habyt-rental-system
 
